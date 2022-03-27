@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Przelicznik walut</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    
+        <div class="container-main container-fluid m-4">
+            <h1>Kalkulator wymiany walut wg NBP</h1>
+
+            
+                <div class="ceil">
+                        <label for="currencyNeeded"> Chcę kupić </label>
+                   
+                       
+
+                    <select id="currencyNeeded" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                        <option data-midvalue ="1">PLN złoty Polska </option>
+                        
+                       
+                    </select>
+                </div>
+                <div class="ceil">
+                    <button type ="button" id="swap-currency" class="btn btn-secondary btn-sm up-arrow" >⮀</button>
+                    
+                </div>
+               
+                <div class="ceil">
+
+                    
+
+                    <label for="currencyOwned"> Mam do sprzedania  </label>
+                    
+                    <select id="currencyOwned"class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                        <option >PLN złoty Polska </option>
+                    
+                    
+                        
+                        
+                        
+                    </select>
+
+                </div>
+
+               
+                <div class="ceil">
+                    <label for="salary" class="col-form-label ">Ile mam gotówki: </label>
+                    <div class="sm-8">
+                        <input type="text" class="form-control" id="amoutOfCurrency" value="">
+                    </div>
+                </div>
+
+                <div class="ceil">
+                    <div class="mb3">
+                        <h4> Ile kasy wynikowej walucie  </h4>
+                        <span id="result"> xxxxxxx</span>
+                    </div>
+                </div>
+
+
+                <div class="ceil">
+                    <button type ="button" id="spr" class="btn btn-secondary btn-sm up-arrow" >sprawdz kursy </button>
+                    
+                </div>
+                <!--obsługa okienka modalnego  -->
+
+                <div class="row justify-content-center ">
+                   
+                   
+                 
+
+                </div> 
+                <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#reg-modal">
+                    Informacje
+                </button>
+                    <!-- data-bs-toggle="modal"  mówi że przycisk będzie otwierał okno modalne
+                         data-bs-target="#reg-modal" tu podajemy id do okienka któr chcemy otworzyć -->
+                    
+               
+
+                    
+                        
+                               
+                                
+                                    
+                                        
+                                         
+                
+                                   
+                
+                                
+                
+                
+                    
+                    <div class="modal fade" id="reg-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="modal-title"> Informacja o wymianie</h5>
+                                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">X</button>
+                
+                                </div>
+                                <div class="modal-body">
+                                    <p> Uprzejmie informujemy, że wymiany walut w naszym kalkulatorze są liczone na podstawie kursu w NBP. W poszczególnych kantorach kursy mogą sie różnić</p>
+                                        
+                                </div>
+                                <div class="modal-footer">
+                                    <p>Jakub Siudut Kompany- Automatyla,PLC, tarcie chrzanu i strony internetowe</p>
+                                </div>
+                
+                            </div>
+                
+                        </div>
+
+                        <div class="modal fade" id="reg-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="modal-title"> Informacja o wymianie</h5>
+                                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">X</button>
+                    
+                                    </div>
+                                    <div class="modal-body">
+                                        <p> Uprzejmie informujemy, że wymiany walut w naszym kalkulatorze są liczone na podstawie kursu w NBP. W poszczególnych kantorach kursy mogą sie różnić</p>
+                                            
+                                    </div>
+                                    <div class="modal-footer">
+                                        <p>Jakub Siudut Kompany- Automatyla,PLC, tarcie chrzanu i strony internetowe</p>
+                                    </div>
+                    
+                                </div>
+                    
+                            </div>
+                       
+                   
+
+
+                 
+                </div>
+                </div>
+
+        </div>
+
+
+            
+            
+
+	
+       
+            
+            
+
+        </div>
+        
+    
+
+    
+    
+
+    <script src="code.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+ 
+</body>
+</html>
